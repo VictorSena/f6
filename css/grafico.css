@@ -1,0 +1,66 @@
+#chart *{
+    vector-effect: non-scaling-stroke;
+}
+
+/* Gráfico */
+#chart .planoDeFundo {
+    fill: #ccc;
+}
+#chart .linha {
+    fill:none;
+    stroke-width: 4;
+    stroke: url(#Gradient1);
+}
+
+/* Marcadores */
+	/* Base */
+#chart .mark {
+	fill: white;
+	stroke-width: 4;
+} #chart .mark:hover {
+	stroke-width: 6;
+}
+
+	/* Cores */
+#chart #linkHome {
+	stroke: #ed2a37;
+}
+#chart #linkHome:hover {
+	fill: #ed2a37;
+}
+#chart #linkAgencia {
+	stroke: #7cc24c;
+}
+#chart #linkAgencia:hover {
+	fill: #7cc24c;
+}
+#chart #linkEquipe {
+	stroke: #7cc24c;
+}
+#chart #linkEquipe:hover {
+	fill: #7cc24c;
+}
+#chart #linkPortifolio {
+	stroke: #00a0dd;
+}
+#chart #linkPortifolio:hover {
+	fill: #00a0dd;
+}
+#chart #linkContato {
+	stroke: #00a0dd;
+}
+#chart #linkContato:hover {
+	fill: #00a0dd;
+}
+
+	/* Textos */
+#chart .mark + text {
+	opacity: 0;
+}
+#chart .mark:hover + text {
+	opacity: 1;
+}
+#chart .descText {
+	font-family: Helvetica;
+	text-anchor: middle;
+}

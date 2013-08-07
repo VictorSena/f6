@@ -1,0 +1,160 @@
+/* ==========================================================================
+   Padrões
+   ========================================================================== */
+
+/* -----------
+-- Standart --
+----------- */
+body {
+	padding:0;
+}
+
+/* -----------
+--- Header ---
+----------- */
+#header {
+	margin-top: 0;
+	padding: .4em 0;
+	width: 100%;
+	background-color: #333;
+	text-align: center;
+	height: 5em;
+	transition: margin 1s ease;
+	overflow: hidden;
+}
+#header.smOculto {
+	margin-top: -4em;
+}
+#social-media {
+	margin: 0px;
+	list-style: none;
+}
+#social-media li {
+	display: inline;
+	opacity: 1;
+}
+#social-media li img {
+	width: 5em;
+	height: 5em;
+}
+
+/* -----------
+-- Conteudo --
+----------- */
+#conteudo {
+	margin-top: 2em;
+}
+.central {
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+}
+
+/* ----------
+-- Gráfico --
+---------- */
+#grafico {
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	height: 300px;
+	width: 100%;
+}
+#chart *{
+    vector-effect: non-scaling-stroke;
+}
+
+/* Gráfico */
+#chart .planoDeFundo {
+    fill: #ccc;
+}
+#chart .linha {
+    fill:none;
+    stroke-width: 4;
+    stroke: url(#Gradient1);
+}
+
+/* Marcadores */
+	/* Base */
+#chart .mark {
+	fill: white;
+	stroke-width: 4;
+} #chart .mark:hover, #chart .mark.marked {
+	stroke-width: 6;
+}
+
+	/* Cores */
+#chart #linkIndex {
+	stroke: #ed2a37;
+}
+#chart #linkIndex:hover, #chart #linkIndex.marked {
+	fill: #ed2a37;
+}
+#chart #linkAgencia {
+	stroke: #7cc24c;
+}
+#chart #linkAgencia:hover, #chart #linkAgencia.marked {
+	fill: #7cc24c;
+}
+#chart #linkEquipe {
+	stroke: #7cc24c;
+}
+#chart #linkEquipe:hover, #chart #linkEquipe.marked {
+	fill: #7cc24c;
+}
+#chart #linkPortifolio {
+	stroke: #00a0dd;
+}
+#chart #linkPortifolio:hover, #chart #linkPortifolio.marked {
+	fill: #00a0dd;
+}
+#chart #linkContato {
+	stroke: #00a0dd;
+}
+#chart #linkContato:hover, #chart #linkContato.marked {
+	fill: #00a0dd;
+}
+
+	/* Textos */
+#chart .mark + text {
+	opacity: 0;
+}
+#chart .mark:hover + text, #chart .mark.marked + text {
+	opacity: 1;
+}
+#chart .descText {
+	font-family: Helvetica;
+	text-anchor: middle;
+}
+
+/* ==========================================================================
+   Páginas
+   ========================================================================== */
+/* -----------
+---- Home ----
+----------- */
+#logo .central {
+	margin-top: -7%;
+}
+#logo .central img {
+	max-height: 14%;
+	max-width: 25%;
+}
+
+/* -----------
+--- Outras ---
+----------- */
+#logo .logoTopo {
+	margin-top: 2em;
+	width:100%;
+	text-align: center;
+}
+#logo .logoTopo img {
+	max-height: 8%;
+	max-width: 16%;
+}
+
+/* ----------
+-- Agência --
+---------- */
