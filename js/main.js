@@ -6,7 +6,9 @@ $(document).ready(function () {
 			$(this).removeClass("smOculto");
 			return false;
 		}
-		else $(this).addClass("smOculto");
+		else {
+			$(this).addClass("smOculto");
+		}
 	});
 
 	/* Links */
